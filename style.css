@@ -13,7 +13,8 @@ nav {
     display: flex;
     padding: 1% 5%;
     height:5rem;
-    justify-content: space-between;
+    gap: 3rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
     }
 
 nav .header_left
@@ -61,6 +62,7 @@ nav .array-inputs
     align-items: center;
     gap: 1rem;
     margin: 1% 0%;
+    margin: auto;
  }
 
  nav .array-inputs #speed
@@ -69,6 +71,14 @@ nav .array-inputs
     align-items: center;
     gap: 1rem;
     margin: 1% 0%;
+ }
+
+ nav #a_generate 
+ {
+    border-radius: 5%;
+    outline: none;
+    border: none;
+    background-color: transparent;
  }
  
 
