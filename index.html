@@ -3,9 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sorting Visualizer</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <header>
+        <nav>
+            <div class="header_left">
+                <p class="nav-heading">Sorting Visualizer</p>
+                <div class="algos">
+                    <button>Bubble</button>
+                    <button>Selection</button>
+                    <button>Insertion</button>
+                    <button>Merge</button>
+                    <button>Quick</button>
+                    <button>Merge</button>
+                </div>
+            </div>
+            <div class="array-inputs">
+                <div id="size">
+                    <p class="text">Size of the array:</p>
+                    <input id="a_size" type="range" min="20" max="150" step="1" value="80">
+                </div>
+                <div id="speed">
+                    <p class="text">Speed of the algorithm:</p>
+                    <input id="a_speed" type="range" min="20" max="5" step="1" value="4">
+                </div>
+            </div>
+            <button id="a_generate">Generate New Array!</button>
+
+        </nav>
+    </header>
 </body>
 </html>
