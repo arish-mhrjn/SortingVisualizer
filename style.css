@@ -53,6 +53,7 @@ nav .header_left .algos button {
   font-size: 1.5rem;
   transition: color 0.3s ease, transform 0.3s ease;
   align-items: center;
+  cursor: pointer;
 }
 
 nav .array-inputs {
@@ -81,6 +82,7 @@ nav .array-inputs #size #a_size,
 nav .array-inputs #speed #a_speed {
   width: 20rem;
   max-width: 20rem;
+  cursor: grab;
 }
 
 nav #a_generate {
@@ -92,6 +94,7 @@ nav #a_generate {
   color: rgb(38, 43, 46);
   transition: color 0.3s ease, transform 0.3s ease;
   align-self: center;
+  cursor: pointer;
 }
 
 nav #a_generate:hover,
@@ -99,24 +102,6 @@ nav .header_left .algos button:hover {
   color: greenyellow;
   transform: scale(1.1);
 }
-
-/* @media (max-width: 1500px) {
-  nav {
-    gap: 5rem;
-    padding: 1% 5%;
-  }
-  nav .header_left .nav-heading {
-    font-size: 3rem;
-  }
-
-  nav .header_left .algos button {
-    font-size: 1.5rem;
-  }
-
-  nav #a_generate {
-    font-size: 2rem;
-  }
-} */
 
 @media (max-width: 1730px) and (min-width: 1652px) {
   nav {
