@@ -32,3 +32,33 @@ function generate_array() {
       "%;";
   }
 }
+
+function update_array_size() {
+  array_size = inp_as.value;
+  generate_array();
+}
+
+window.onload = update_array_size();
+
+//Run approprite algorithm
+for (var i = 0; i < butts_algos.length; i++) {
+  butts_algos[i].addEventListener("click", runAlgo);
+}
+
+function disable_buttons() {
+  for (var i = 0; i < butts_algos.length; i++) {
+    butts_algos[i].classList = [];
+    butts_algos[i].classList.add("butt_locked");
+    butts_algos[i].disabled = true;
+    inp_as.disabled = true;
+    inp_gen.disabled = true;
+    inp_aspeed.disabled = true;
+  }
+}
+
+function runAlgo()
+{
+  disable_buttons();
+  this.classList.add("butt_selected");
+  switch(this.innerHTML)
+}
