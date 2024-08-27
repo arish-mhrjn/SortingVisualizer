@@ -56,9 +56,30 @@ function disable_buttons() {
   }
 }
 
-function runAlgo()
-{
+function runAlgo() {
   disable_buttons();
   this.classList.add("butt_selected");
-  switch(this.innerHTML)
+  switch (this.innerHTML) {
+    case "BUBBLE":
+      bubble();
+      break;
+    case "SELECTION":
+      selction();
+      break;
+    case "INSERTION":
+      insertion();
+      break;
+    case "E":
+      merge();
+      break;
+    case "Bubble":
+      merge();
+      break;
+    case "QUICK":
+      quick();
+      break;
+    case "HEAP":
+      heap();
+      break;
+  }
 }
