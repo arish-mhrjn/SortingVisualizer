@@ -5,7 +5,7 @@ array_size = inp_as.value;
 var inp_gen = document.getElementById("a_generate");
 var inp_aspeed = document.getElementById("a_speed");
 
-var butts_algos = document.querySelectorAll(".algos buttons");
+var butts_algos = document.querySelectorAll(".algos button");
 var div_sizes = [];
 var divs = [];
 var margin_size;
@@ -26,7 +26,7 @@ function generate_array() {
     divs[i].style =
       "margin:0%" +
       margin_size +
-      "%;background_color:blue;width:" +
+      "%;background-color:white;width:" +
       (100 / array_size - 2 * margin_size) +
       "%;height:" +
       div_sizes[i] +
@@ -59,21 +59,19 @@ function disable_buttons() {
 
 function runAlgo() {
   disable_buttons();
+  console.log(this.innerHTML);
   this.classList.add("butt_selected");
   switch (this.innerHTML) {
-    case "BUBBLE":
+    case "Bubble":
       bubble();
       break;
-    case "SELECTION":
+    case "Selection":
       selction();
       break;
-    case "INSERTION":
+    case "Insertion":
       insertion();
       break;
-    case "E":
-      merge();
-      break;
-    case "Bubble":
+    case "Merge":
       merge();
       break;
     case "QUICK":

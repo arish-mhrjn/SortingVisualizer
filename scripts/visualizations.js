@@ -23,7 +23,6 @@ function vis_speed() {
   delay_time = 10000 / (Math.floor(array_size / 10) * speed); // increase the speed by decreasing the numerator
 }
 var delay_time = 10000 / (Math.floor(array_size / 10) * speed); // increase the speed by decreasing the numerator
-var c_delay = 0;
 
 function div_update(cont, height, color) {
   window.setTimeout(function () {
@@ -42,8 +41,6 @@ function div_update(cont, height, color) {
 function enable_buttons() {
   window.setTimeout(function () {
     for (var i = 0; i < butts_algos.length; i++) {
-      butts_algos[i].classList = [];
-      butts_algos[i].classList.add("butt_unselected");
       butts_algos[i].disabled = false;
       inp_as.disabled = false;
       inp_gen.disabled = false;

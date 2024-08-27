@@ -231,3 +231,43 @@ nav .header_left .algos button:hover {
     flex: 1;
   }
 }
+
+section {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+
+  width: 100%;
+  background: linear-gradient(
+    -225deg,
+    rgb(82, 113, 196) 0%,
+    rgb(177, 159, 255) 48%,
+    rgb(236, 161, 254) 100%
+  );
+  height: auto;
+}
+
+section .footer {
+  position: relative;
+  display: flex;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+}
+section .complexity_containers {
+  margin-top: 2vh;
+  flex: 1;
+}
+h3 {
+  font-weight: bolder;
+  font-size: 1.5vw;
+}
+
+.info_cont1 {
+  flex: 1;
+  justify-content: center;
+}
+.info_cont2 {
+  flex: 1;
+  justify-content: center;
+}
