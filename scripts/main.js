@@ -23,8 +23,9 @@ function generate_array() {
     divs[i] = document.createElement("div");
     cont.appendChild(divs[i]);
     margin_size = 0.1;
-    divs[i].style = "margin:0%" + s;
-    margin_size +
+    divs[i].style =
+      "margin:0%" +
+      margin_size +
       "%;background_color:blue;width:" +
       (100 / array_size - 2 * margin_size) +
       "%;height:" +
