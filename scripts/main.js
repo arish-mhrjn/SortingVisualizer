@@ -66,7 +66,7 @@ function runAlgo() {
       bubble();
       break;
     case "Selection":
-      selction();
+      selection();
       break;
     case "Insertion":
       insertion();
