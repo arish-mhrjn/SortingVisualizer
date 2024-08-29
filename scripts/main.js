@@ -26,7 +26,7 @@ function generate_array() {
     divs[i].style =
       "margin:0%" +
       margin_size +
-      "%;background-color:white;width:" +
+      "%;background-color:black;width:" +
       (100 / array_size - 2 * margin_size) +
       "%;height:" +
       div_sizes[i] +

@@ -8,6 +8,10 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: lavender;
+}
+
 nav {
   background: linear-gradient(
     -225deg,
@@ -232,7 +236,7 @@ nav .header_left .algos button:hover {
   }
 }
 
-section {
+/* section {
   display: flex;
   position: absolute;
   bottom: 0;
@@ -264,10 +268,21 @@ h3 {
 }
 
 .info_cont1 {
-  flex: 1;
   justify-content: center;
 }
+
 .info_cont2 {
-  flex: 1;
   justify-content: center;
+  flex: 1;
+} */
+
+#array_container {
+  display: flex;
+  height: 80%;
+  width: 85%;
+  position: absolute;
+  /* border-top: 1vw solid rgb(156, 49, 49); */
+  left: 50%;
+  top: 20%;
+  transform: translateX(-50%);
 }

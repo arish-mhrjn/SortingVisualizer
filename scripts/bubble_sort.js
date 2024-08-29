@@ -6,11 +6,11 @@ function bubble() {
   // document.getElementById("time_best").innerText = "O(N)";
 
   //setting space complexity
-  document.getElementById("space_worst").innerText = "O(1)";
+  // document.getElementById("space_worst").innerText = "O(1)";
   c_delay = 0;
   for (var i = 0; i < array_size - 1; i++) {
     for (var j = 0; j < array_size - i - 1; j++) {
-      div_update(divs[j], div_sizes[j], "yellow"); //Color update being compared
+      // div_update(divs[j], div_sizes[j], "yellow"); //Color update being compared
 
       if (div_sizes[j] > div_sizes[j + 1]) {
         div_update(divs[j], div_sizes[j], "red"); //Color update
