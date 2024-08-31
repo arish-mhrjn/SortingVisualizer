@@ -17,17 +17,23 @@ function selection() {
       }
     }
     if (min_index != i) {
-      var temp = div_sizes[i];
-      div_sizes[i] = div_sizes[min_index];
-      div_sizes[min_index] = temp;
-      div_update(divs[i], div_sizes[i], "green");
-    } else {
-      div_update(divs[i], div_sizes[i], "green");
+      swap(i, min_index);
     }
+
+    div_update(divs[i], div_sizes[i], "green");
+
     for (var k = i + 1; k < array_size; k++) {
       div_update(divs[k], div_sizes[k], "black");
     }
   }
   div_update(divs[array_size - 1], div_sizes[array_size - 1], "green");
   enable_buttons();
+}
+
+function swap(i, min_index) {
+  var temp = div_sizes[i];
+  div_sizes[i] = div_sizes[min_index];
+  div_sizes[min_index] = temp;
+  div_update(divs[i], div_sizes[i], "green");
+  div_update(divs[min_index], div_sizes[min_index], "yellow");
 }
