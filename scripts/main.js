@@ -77,7 +77,7 @@ function runAlgo() {
     case "Quick":
       quick();
       break;
-    case "HEAP":
+    case "Heap":
       heap();
       break;
   }
