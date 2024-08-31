@@ -8,8 +8,6 @@ function insertion() {
       div_update(divs[j + 1], div_sizes[j + 1], "red");
       div_update(divs[j], div_sizes[j], "red");
       div_sizes[j + 1] = div_sizes[j];
-      //   div_update(divs[j + 1], div_sizes[j + 1], "red");
-      //   div_update(divs[j], div_sizes[j], "red");
       div_update(divs[j + 1], div_sizes[j + 1], "green");
       div_update(divs[j], div_sizes[j], "blue");
       console.log(j);
