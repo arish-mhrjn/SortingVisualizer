@@ -59,7 +59,6 @@ function disable_buttons() {
 
 function runAlgo() {
   disable_buttons();
-  console.log(this.innerHTML);
   this.classList.add("butt_selected");
   switch (this.innerHTML) {
     case "Bubble":

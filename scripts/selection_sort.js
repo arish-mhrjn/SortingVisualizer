@@ -9,7 +9,6 @@ function selection() {
         if (min_index != i) {
           div_update(divs[min_index], div_sizes[min_index], "blue");
         }
-        console.log(min_index);
         min_index = j;
         div_update(divs[min_index], div_sizes[min_index], "yellow");
       } else {

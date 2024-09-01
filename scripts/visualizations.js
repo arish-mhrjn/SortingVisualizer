@@ -1,6 +1,6 @@
 var speed = 1000;
 inp_aspeed.addEventListener("input", vis_speed);
-
+let x = document.getElementById("audio");
 function vis_speed() {
   var array_speed = inp_aspeed.value;
   switch (parseInt(array_speed)) {
@@ -36,6 +36,7 @@ function div_update(cont, height, color) {
       "%; background-color:" +
       color +
       ";";
+    play();
   }, (c_delay += delay_time));
 }
 function enable_buttons() {
@@ -47,4 +48,7 @@ function enable_buttons() {
       inp_aspeed.disabled = false;
     }
   }, (c_delay += delay_time));
+}
+function play() {
+  x.play();
 }
