@@ -10,7 +10,6 @@ function insertion() {
       div_sizes[j + 1] = div_sizes[j];
       div_update(divs[j + 1], div_sizes[j + 1], "green");
       div_update(divs[j], div_sizes[j], "blue");
-      console.log(j);
       j = j - 1;
     }
     div_sizes[j + 1] = key;
